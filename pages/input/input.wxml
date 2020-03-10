@@ -1,0 +1,11 @@
+<!--pages/input/input.wxml-->
+<!-- <text>pages/input/input.wxml</text> -->
+<input value="哈哈哈"></input>
+<input type="password"></input>
+<input confirm-type="search"></input>
+<!-- input绑定事件 -->
+<input placeholder="绑定事件"
+ bindinput="handleInput" 
+ bindfocus="handleFocus"
+ bindblur="handleBlur"
+ ></input>

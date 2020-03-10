@@ -1,0 +1,9 @@
+<!--pages/text/text.wxml-->
+<!-- <text>pages/text/text.wxml</text> -->
+<!-- space设置文本空格大小 -->
+<!-- selecttable 设置文本是否能被选中，默认为false，将属性写在上则默认为true，true和false必须写用Mustache -->
+<!-- decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp; -->
+<text space="nbsp">Hello Word\n</text>
+<text selectable space="emsp">你好 小程序\n</text>
+<text selectable="{{true}}" space="ensp">方 北北\n</text>
+<text decode>你 &nbsp; 好</text>

@@ -1,0 +1,13 @@
+<!--pages/image/image.wxml-->
+<!-- <text>pages/image/image.wxml</text> -->
+<!-- image默认320X240px 行内块元素-->
+<image src="../../assets/image/二哈.jfif"></image>
+<image src="../../assets/image/二哈.jfif"></image>
+<image src="../../assets/image/二哈.jfif"></image>
+<text>哈哈哈</text>
+ <button bindtap="handleChooseAlbum">选择图片</button>
+ <image src="{{filePath}}"></image>
+ <!-- lazy-load -->
+ <image wx:for="{{10}}" src="http://b191.photo.store.qq.com/psb?/V11bAUNf1M5l16/SIDh*c548zPdYVKNBWUso.llnwDfhdrd.H7zQWXiPEY!/b/dL8AAAAAAAAA&bo=YAlABo0gtBURCR0!&rf=viewer_4" bindload="handlebindload" lazy-load></image>
+<!-- 长按出现弹窗，识别小程序码等功能 -->
+<image src="http://b191.photo.store.qq.com/psb?/V11bAUNf1M5l16/SIDh*c548zPdYVKNBWUso.llnwDfhdrd.H7zQWXiPEY!/b/dL8AAAAAAAAA&bo=YAlABo0gtBURCR0!&rf=viewer_4" show-menu-by-longpress></image>

@@ -1,0 +1,21 @@
+/* pages/scroll-view/scroll-view.wxss */
+.father {
+  background-color: red;
+  white-space: nowrap;
+}
+.son {
+  background-color: purple;
+  width:100px;
+  height:100px;
+  margin:10px;
+  display: inline-block;
+}
+.father1 {
+  background-color: black;
+  height: 150px;
+}
+.son1 {
+  background-color: red;
+  height:100px;
+  margin: 10px;
+}

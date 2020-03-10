@@ -1,0 +1,6 @@
+<scroll-view class="father" scroll-x upper-threshold="50">
+  <view class="son" wx:for="{{10}}"></view>
+</scroll-view>
+<scroll-view class="father1" scroll-y>
+  <view class="son1" wx:for="{{10}}"></view>
+</scroll-view>

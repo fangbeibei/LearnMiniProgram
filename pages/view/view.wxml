@@ -1,0 +1,5 @@
+<!--pages/view/view.wxml-->
+<!-- <text>pages/view/view.wxml</text> -->
+<!--类似于div -->
+<view class="box" hover-class="box1" hover-stay-time="500" hover-start-time="0">方北北</view>
+<view>大佬</view>
