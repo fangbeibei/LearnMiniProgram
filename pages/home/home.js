@@ -1,66 +1,80 @@
-// pages/home/home.js
+const app = getApp()
+// console.log(app.globalData.name)
+// console.log(app.globalData.age)
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  // 初始化数据
   data: {
-
+    name: "FangBeiBei",
+    age: 18,
+    users: [{
+      id: 1,
+      name: "张三",
+      age: 18
+    }, {
+      id: 2,
+      name: "李四",
+      age: 18
+    }, {
+      id: 3,
+      name: "王五",
+      age: 19
+    }],
+    count: 0,
+    list: []
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleIncCountClick() {
+    // this.data.count += 1
+    // console.log(this.data.count)
+    this.setData({
+      count: this.data.count + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handledecCountClick() {
+    this.setData({
+      count: this.data.count - 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleGetUserInfo(event) {
+    console.log(event)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  // 页面加载完毕
+  onLoad() {
+    console.log('load')
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  // 页面显示出来
+  onShow() {
+    console.log('show')
+    wx.request({
+      url: 'http://123.207.32.32:8000/api/wh/recommend',
+      // 箭头函数中的this是一层层往上找的，最总一定是找到最顶层Page的
+      success: (res) => {
+        this.setData({
+          list: res.data.data.list
+        })
+      }
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  // 页面初次渲染完成
+  onReady() {
+    console.log('ready')
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  // 当页面隐藏
+  onHide() {
+    console.log('hide')
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onUnload() {
+    console.log('onUnload')
+  },
+  onPageScroll(obj) {
+    console.log(obj)
+  },
+  onReachBottom() {
+    console.log('页面滚动到底部')
+  },
+  onPullDownRefresh() {
+    console.log('页面刷新')
+  },
+  onTabItemTap(){
+    console.log('onTabItemTap')
   }
 })

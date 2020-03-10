@@ -1,3 +1,21 @@
 <!--pages/home/home.wxml-->
-<text class="title">HelloWorld</text>
-<button size='mini'>按钮</button>
+<!-- <text class="title">HelloWorld</text>
+<button size='mini'>按钮</button> -->
+<!-- {{}} Mustache语法 -->
+<view>{{name}}</view>
+<view>我的年龄:{{age + 20}}</view>
+<!-- vx:for 遍历数组 -->
+<view wx:for="{{users}}">{{item.name}}-{{item.age}}</view>
+<!-- 绑定事件 -->
+<view>{{count}}</view>
+<button size="mini" bindtap="handleIncCountClick">增加</button>
+<button size="mini" bindtap="handledecCountClick">减少</button>
+<button 
+  size="mini"
+  open-type="getUserInfo"
+  bindgetuserinfo="handleGetUserInfo">
+  获取授权
+  </button>
+  <open-data type="userNickName"></open-data>
+  <open-data type="userAvatarUrl"></open-data>
+  <!-- <view wx:for="{{list}}">{{item.title}}</view> -->

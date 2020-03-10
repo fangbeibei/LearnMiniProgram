@@ -1,6 +1,32 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/categroy/category"
+  ],
+  "sitemapLocation": "sitemap64.json",
+  "window": {
+    "navigationBarBackgroundColor": "#FF6876",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "My First MiniProgram",
+    "backgroundColor": "black",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "selectedColor":"#ff5777",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/categroy/category",
+        "text": "购物车",
+        "iconPath": "assets/tabbar/cart.png",
+        "selectedIconPath": "assets/tabbar/cart_active.png"
+      }
+    ]
+  }
 }
