@@ -1,0 +1,10 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- <text>pages/wxml/wxml.wxml</text> -->
+<button type="warn" bindtap="handleIncScoreTap">加分</button>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+<!-- wv:if 和hidden的区别 -->
+<!-- hidden为DOM元素还存在 知识display:none -->
+<!-- wx:if DOM不存在 -->
