@@ -1,0 +1,4 @@
+/* pages/wxss/wxss.wxss */
+@import "./style/box.wxss";
+@import "./style/text.wxss";
+@import "./style/weui.wxss";
