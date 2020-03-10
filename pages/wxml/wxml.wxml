@@ -1,0 +1,8 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- <text>pages/wxml/wxml.wxml</text> -->
+<!-- mustache 语法-->
+<view>{{message}}</view>
+<view>{{age >=18 ? 'adult':'minor'}}</view>
+<button type="warn" bindtap="handleBox">切换颜色</button>
+<view class="box {{isActive?'red':''}}"></view>
+<view>{{now}}</view>
