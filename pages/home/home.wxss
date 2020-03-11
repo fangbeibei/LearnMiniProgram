@@ -3,3 +3,10 @@
   color: red;
   font-size: 30px;
 }
+.nav {
+  display:flex;
+}
+.nav view {
+  flex: 1;
+  text-align: center;
+}

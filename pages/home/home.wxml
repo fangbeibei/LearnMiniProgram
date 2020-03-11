@@ -1,3 +1,14 @@
 <!--pages/home/home.wxml-->
 <text class="title">HelloWorld</text>
 <button size='mini'>按钮</button>
+  <view class='nav'>
+    <view 
+      wx:for="{{['服装','鞋子','零食','所有']}}" 
+      wx:key="item"
+      bind:tap="handleNavClick"
+      data-index="{{index}}"
+      data-item="{{item}}"
+      >
+      {{item}}
+    </view>
+  </view>
