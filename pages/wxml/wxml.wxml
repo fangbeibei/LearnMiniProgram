@@ -1,0 +1,30 @@
+<!--pages/wxml/wxml.wxml-->
+<text>列表渲染</text>
+<!-- 1.遍历数组 -->
+<view wx:for="{{['a','b','b']}}">{{item}} {{index}}</view>
+
+<!-- 2.遍历数字 -->
+<!-- <view wx:for="{{9}}">{{item}}</view> -->
+
+<!-- 3.block的作用 -->
+<!-- block只是一个标签，而view是一个组件 -->
+<!-- 如果只是为了包裹一些组件，那么用block可以提高性能，因为它本身不会被渲染到DOM树上 -->
+<block wx:for="{{3}}">
+  <button>按钮</button>
+  <view>哈哈</view>
+</block>
+<view wx:for="{{3}}">
+  <button>按钮</button>
+  <view>哈哈</view>
+</view>
+<view>--------------------</view>
+
+<!-- 4.自定义item和index -->
+<block wx:for="{{arr}}">
+  <block wx:for="{{item}}" wx:for-item="child" wx:for-index="i">
+    <view>{{child}}{{i}}</view>
+  </block>
+</block>
+
+<!-- 5.key的作用 -->
+<!-- 1.无需修改原来DOM树上元素的元素的位置，增加插入性能 -->
