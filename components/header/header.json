@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "child-cpn":"/components/child-cpn/child-cpn"
+  }
+}

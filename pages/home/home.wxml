@@ -1,3 +1,21 @@
 <!--pages/home/home.wxml-->
-<text class="title">HelloWorld</text>
-<button size='mini'>按钮</button>
+<view class="title">我是home的title</view>
+<!-- 自定义组件的基本使用 -->
+<!-- 1.组件可以嵌套使用
+     2.若将组件定义在app.json中则为全局组件，哪个页面都能使用，否则为局部组件
+     3.使用class选择器 组件与页面的样式默认是互不影响的
+     4.组件内的样式不能使用ID、标签、和属性选择器
+     5.若外部使用标签选择器，会对组件内部产生影响
+     6.若想要外部的样式对组件内部的样式产生影响：可以在组件的js文件中添加
+       options: {
+          styleIsolation: "apply-shared"
+        }
+    7.若想要内外部互相影响则添加
+       options: {
+          styleIsolation: "shared"
+        }
+    8.
+ -->
+<header></header>
+<header></header>
+<header></header>

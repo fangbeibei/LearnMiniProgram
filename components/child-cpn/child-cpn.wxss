@@ -1,0 +1,4 @@
+/* components/child-cpn/child-cpn.wxss */
+.child-component {
+  background-color: red;
+}

@@ -1,0 +1,3 @@
+<!--components/child-cpn/child-cpn.wxml-->
+<!-- <text>components/child-cpn/child-cpn.wxml</text> -->
+<view class="child-component">我是child-component</view>
