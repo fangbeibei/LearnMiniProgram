@@ -1,11 +1,10 @@
-// pages/home/home.js
+// pages/wxs/wxs.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    price: "19.99999"
+    price:"19.9999"
   },
 
   /**

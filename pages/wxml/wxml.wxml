@@ -1,0 +1,26 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- <text>pages/wxs/wxs.wxml</text> -->
+<!-- <wxs module="info">
+  var message = "HelloWorld"
+  var name = "FangBeiBei"
+  var sum = function(num1,num2){
+    return num1 + num2
+  } 
+  module.exports = {
+  message: message,
+  name:name,
+  sum:sum
+}
+</wxs> -->
+<!-- 这里不能用绝对路径，必须使用相对路径 -->
+<wxs src="../../wxs/info.wxs" module="info"></wxs>
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(1,2)}}</view>
+
+<!-- wxml的实际应用 -->
+<!-- 价格格式化 -->
+<wxs src = "../../wxs/format.wxs" module="format"/>
+<view>{{format.priceFormat(price,2)}}</view>
+<!-- 事件格式化 -->
