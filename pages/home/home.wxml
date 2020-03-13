@@ -1,3 +1,7 @@
 <!--pages/home/home.wxml-->
 <text class="title">HelloWorld</text>
 <button size='mini'>按钮</button>
+<my-slot>
+  <button slot="slot1">我是插槽按钮1</button>
+  <button slot="slot2">我是插槽按钮2</button>
+</my-slot>
