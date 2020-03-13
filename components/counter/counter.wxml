@@ -1,0 +1,3 @@
+<!--components/counter/counter.wxml-->
+<!-- <text>components/counter/counter.wxml</text> -->
+<button size="mini" type="warn" bind:tap="handleAddTap">Add</button>

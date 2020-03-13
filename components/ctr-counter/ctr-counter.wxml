@@ -1,0 +1,3 @@
+<!--components/ctr-counter/ctr-counter.wxml-->
+<!-- <text>components/ctr-counter/ctr-counter.wxml</text> -->
+<view>组件内的数量：{{count}}</view>

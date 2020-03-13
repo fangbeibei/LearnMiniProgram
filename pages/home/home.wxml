@@ -1,3 +1,13 @@
 <!--pages/home/home.wxml-->
 <text class="title">HelloWorld</text>
 <button size='mini'>按钮</button>
+<header title="哈哈哈" content="我是内容1" titleclass="red" />
+<header title="呵呵呵" content="我是内容2" titleclass="orange" />
+<header title="嘻嘻嘻" content="我是内容3" titleclass="yellow" />
+<view>当前计数：{{count}}</view>
+<counter bind:handleAddTap="handleAddTap" />
+<view>---------------</view>
+<block>
+  <button size="mini" type="primary" bind:tap="handleBtnTap">Add</button>
+  <ctr-counter id="inner-counter"/>
+</block>

@@ -1,0 +1,4 @@
+/* components/header/header.wxss */
+.title {
+  background-color: black;
+}
