@@ -1,3 +1,9 @@
 <!--pages/home/home.wxml-->
 <text class="title">HelloWorld</text>
-<button size='mini'>按钮</button>
+<button size='mini' bind:tap="handleBtnTap">按钮</button>
+<view>--------</view>
+<button open-type="share" size="mini">转发</button>
+<view>---------</view>
+<button size="mini" bind:tap="handleToastTap">showToast</button>
+<button size="mini" bind:tap="handleModalTap">showModal</button>
+<button size="mini" bind:tap="handleLoadingTap">showLoading</button>
