@@ -1,3 +1,23 @@
 <!--pages/home/home.wxml-->
 <text class="title">HelloWorld</text>
 <button size='mini'>按钮</button>
+<navigator url="/pages/about/about">跳转到about</navigator>
+<!-- navigator属性：open-type -->
+<!-- open-type：redirect关闭当前页，跳转到指定页  无法返回 -->
+<navigator open-type="redirect" url="/pages/about/about">重定向</navigator>
+<!-- 跳转到tabar -->
+<navigator url="/pages/detail/detail" open-type="switchTab">跳转到详情页</navigator>
+<!-- 关闭所有页面，打开新的页面 -->
+<navigator url="/pages/about/about" open-type="reLaunch">关闭所有页面打开新页面</navigator>
+
+<!-- 跳转过程中的数据传递 -->
+<navigator url="/pages/about/about?name='fangbeiebi'&age=18&height=1.88">跳转到关于页面 带数据</navigator>
+<view>{{name}}</view>
+<!-- 通过函数实现页面跳转 -->
+<button bindtap="handlePushDetail">跳转到详情页</button>
+
+
+<!-- 注意： -->
+<!-- 
+通过switch跳转到tabar是不会压栈的，也就是说是无法返回的
+ -->

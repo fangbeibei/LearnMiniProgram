@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<button bindtap="handleBack">返回</button>
